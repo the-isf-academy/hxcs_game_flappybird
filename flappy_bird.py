@@ -2,8 +2,10 @@
 # 👾 Let's make the Flappy Bird!
 # 
 # 1️⃣ Run the file & install
-#    - in the Terminal run the command: pip3 install pgzero
-#    - play the game
+#    - in the Terminal run the commands: 
+#.          python3 -m venv my_project_env
+#           source my_project_env/bin/activate
+#           pip3 install pgzero
 #
 # 2️⃣ Add in your own charachter & background sprite!
 # 
@@ -60,10 +62,7 @@ def draw():
   # if the game is running, draw the game
     if game_running == True:
 
-
         background.draw()
-
-
         player.draw()
 
         for obstacle in top_obstacle_list:
